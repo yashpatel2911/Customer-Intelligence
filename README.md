@@ -1,2 +1,2 @@
 # final-year-project
-This is final year project by me and my team Sunny and Sheshan Patel
+This is final year project by me and my team members Sunny Patel and Sheshan Patel.
