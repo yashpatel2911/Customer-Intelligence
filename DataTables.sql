@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.11 (64 bit)
 MySQL - 5.0.27-community-nt : Database - demo
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -179,7 +180,7 @@ CREATE TABLE `login_table` (
 
 /*Data for the table `login_table` */
 
-insert  into `login_table`(`loginId`,`enabled`,`password`,`role`,`username`) values (1,1,'operate','ROLE_USER','sharyuchavansc@gmail.com'),(2,1,'admin','ROLE_ADMIN','admin@gmail.com');
+insert  into `login_table`(`loginId`,`enabled`,`password`,`role`,`username`) values (1,1,'KillerBoy$7991','ROLE_USER','yashpatel1997@hotmail.com'),(2,1,'admin','ROLE_ADMIN','admin@gmail.com');
 
 /*Table structure for table `package_table` */
 
