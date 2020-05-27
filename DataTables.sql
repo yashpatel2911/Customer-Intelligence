@@ -2,8 +2,7 @@
 SQLyog Ultimate v11.11 (64 bit)
 MySQL - 5.0.27-community-nt : Database - demo
 *********************************************************************
-*/
-
+*/
 
 /*!40101 SET NAMES utf8 */;
 
@@ -34,6 +33,8 @@ CREATE TABLE `area_table` (
 
 /*Data for the table `area_table` */
 
+insert  into `area_table`(`areaId`,`areaDescription`,`areaName`,`deleteStatus`,`cityVO_cityId`) values (36,'urban area','Navarangpura','',32),(37,'rural area','bapunagar','',32),(38,'urban area','andheri','',34),(39,'urban area','bandra','',34),(40,'high class','juhu','',34),(41,'urban area','Marathahalli','',35),(42,'rural area','Hebbal','',35);
+
 /*Table structure for table `campaign_table` */
 
 DROP TABLE IF EXISTS `campaign_table`;
@@ -51,6 +52,8 @@ CREATE TABLE `campaign_table` (
 
 /*Data for the table `campaign_table` */
 
+insert  into `campaign_table`(`campaignId`,`campaignDescription`,`campaignName`,`deleteStatus`,`productVO_productId`) values (55,'This campaign will be held on 2nd of May, 2019 at LDCE.','Intermediate Improvement Product','',52),(56,'This campaign is intended to test our newly delicious launched product and all time favorite choco brownie.','New Launch Product','',49);
+
 /*Table structure for table `category_table` */
 
 DROP TABLE IF EXISTS `category_table`;
@@ -65,6 +68,8 @@ CREATE TABLE `category_table` (
 
 /*Data for the table `category_table` */
 
+insert  into `category_table`(`categoryId`,`categoryDescription`,`categoryName`,`deleteStatus`) values (21,'Ice cream is a sweetened frozen food typically eaten as a snack or dessert.','Ice Cream',''),(22,'A typical Chinese meal will have two things noodles and rice.  ','chinese',''),(23,'Italian cuisine uses ingredients such as tomatoes, all kinds of meat, fish, and cheese.','italian','\0'),(26,'Punjabi cuisine is known for its rich, buttery flavours along with the extensive vegetarian and meat dishes.','punjabi','\0'),(29,'its a drink that typically contains carbonated water, a sweetener and a natural or artificial flavoring.','soft drinks','');
+
 /*Table structure for table `city_table` */
 
 DROP TABLE IF EXISTS `city_table`;
@@ -78,6 +83,8 @@ CREATE TABLE `city_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `city_table` */
+
+insert  into `city_table`(`cityId`,`cityDescription`,`cityName`,`deleteStatus`) values (32,'its the largest city and former capital of the Indian state of Gujarat.','Ahmedabad',''),(33,' its one of the 33 districts of Gujarat state in western India.','Mehsana','\0'),(34,'its the capital city of the Indian state of Maharashtra.','mumbai',''),(35,'its the capital city of the Indian state of Karnataka.','bangalore','');
 
 /*Table structure for table `complaint_table` */
 
@@ -99,6 +106,8 @@ CREATE TABLE `complaint_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `complaint_table` */
+
+insert  into `complaint_table`(`id`,`complaintDate`,`complaintDescription`,`complaintReply`,`complaintStatus`,`complaintSubject`,`replyDate`,`status`,`loginVO_loginId`) values (44,NULL,'Worst.','we will improve it','resolved','Regarding UI','10/04/2019 01:24:32','',16),(54,NULL,'wrost','surely solve it in next update','resolved','Regarding UI','10/04/2019 01:25:46','',1);
 
 /*Table structure for table `dataset_table` */
 
@@ -135,7 +144,7 @@ CREATE TABLE `detection_table` (
 
 /*Data for the table `detection_table` */
 
-insert  into `detection_table`(`detectionId`,`Angry`,`Disgust`,`Fear`,`Happy`,`Sad`,`Suprise`,`Neutral`,`emotionDate`,`emotionTime`) values (1,'0','0','0','47','0','0','33','28:03:2019','12:57:45'),(2,'0','0','0','56','0','0','36','28:03:2019','12:59:06'),(3,'0','0','0','153','0','0','159','28:03:2019','13:03:31'),(4,'0','0','0','171','0','1','216','28:03:2019','13:07:18'),(5,'0','0','0','91','0','0','49','28:03:2019','13:16:18'),(6,'0','0','0','138','0','0','126','28:03:2019','13:24:25'),(7,'0','0','0','94','0','0','42','28:03:2019','13:34:25');
+insert  into `detection_table`(`detectionId`,`Angry`,`Disgust`,`Fear`,`Happy`,`Sad`,`Suprise`,`Neutral`,`emotionDate`,`emotionTime`) values (11,'5','0','0','15','7','0','124','2019-04-10','08:46:35.735965'),(12,'29','0','0','16','7','0','76','2019-04-10','09:56:24.313922'),(13,'0','0','0','21','2','0','67','2019-04-10','12:21:14.265805'),(14,'36','0','3','189','30','32','565','2019-04-10','12:24:33.984171'),(15,'0','0','0','13','0','0','1','2019-04-10','14:51:24.393680'),(16,'7','0','0','1','10','0','112','2019-04-10','23:23:36.611662'),(17,'14','0','0','86','45','0','353','2019-04-10','23:24:56.245562'),(18,'0','0','0','41','35','0','59','2019-04-11','10:52:23.645515'),(19,'56','0','0','673','204','0','1205','2019-04-11','11:06:46.880391'),(20,'3','0','0','15','27','0','229','2019-04-11','11:14:05.200155'),(21,'1','0','0','0','10','0','121','2019-04-11','11:28:34.294547'),(22,'16','0','0','42','26','0','291','2019-04-11','11:30:57.721693'),(23,'2','0','0','1','26','0','127','2019-04-11','11:43:15.437702'),(24,'1','0','0','133','68','0','194','2019-04-11','12:11:09.478225'),(25,'2','0','0','0','15','0','2','2019-04-11','12:14:35.245773'),(26,'29','0','0','9','40','0','426','2019-04-11','12:21:08.857379'),(27,'0','0','0','26','14','0','71','2019-04-11','12:48:12.411280'),(28,'0','0','0','16','100','0','249','2019-04-11','12:54:51.290868'),(29,'5','0','0','35','48','0','158','2019-04-11','12:57:58.577457'),(30,'0','0','0','2','0','0','2','2019-04-11','12:58:58.891315'),(31,'0','0','0','3','84','0','50','2019-04-11','13:00:35.436701'),(32,'0','0','0','0','0','0','0','2019-04-11','13:00:40.713356'),(33,'0','0','0','0','0','0','0','2019-04-11','13:00:52.381095'),(34,'1','0','0','38','24','0','146','2019-04-11','13:03:08.944122'),(35,'4','0','0','46','7','0','129','2019-04-11','13:04:29.131809'),(36,'0','0','0','101','11','1','226','2019-04-11','13:10:53.750500'),(37,'2','0','0','0','4','0','3','2019-04-11','13:24:15.091335'),(38,'0','0','0','0','0','0','0','2019-04-12','12:29:46.874033');
 
 /*Table structure for table `feedback` */
 
@@ -153,6 +162,8 @@ CREATE TABLE `feedback` (
 
 /*Data for the table `feedback` */
 
+insert  into `feedback`(`feedbackId`,`feedBack`,`rating`,`loginVO_loginId`) values (43,'piss off','5',1);
+
 /*Table structure for table `hibernate_sequence` */
 
 DROP TABLE IF EXISTS `hibernate_sequence`;
@@ -163,7 +174,7 @@ CREATE TABLE `hibernate_sequence` (
 
 /*Data for the table `hibernate_sequence` */
 
-insert  into `hibernate_sequence`(`next_val`) values (3),(3),(3),(3),(3),(3),(3),(3),(3),(3),(3),(3);
+insert  into `hibernate_sequence`(`next_val`) values (59),(59),(59),(59),(59),(59),(59),(59),(59),(59),(59),(59);
 
 /*Table structure for table `login_table` */
 
@@ -180,7 +191,7 @@ CREATE TABLE `login_table` (
 
 /*Data for the table `login_table` */
 
-insert  into `login_table`(`loginId`,`enabled`,`password`,`role`,`username`) values (1,1,'KillerBoy$7991','ROLE_USER','yashpatel1997@hotmail.com'),(2,1,'admin','ROLE_ADMIN','admin@gmail.com');
+insert  into `login_table`(`loginId`,`enabled`,`password`,`role`,`username`) values (1,1,'operate','ROLE_USER','patelsheshan0@gmail.com'),(2,1,'admin','ROLE_ADMIN','admin@gmail.com'),(16,1,'sheshan','ROLE_USER','sheshanpatel@yahoo.com'),(57,1,'yash@!7991','ROLE_USER','yshp1997@gmail.com');
 
 /*Table structure for table `package_table` */
 
@@ -198,6 +209,8 @@ CREATE TABLE `package_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `package_table` */
+
+insert  into `package_table`(`packageId`,`deleteStatus`,`packageCampaign`,`packageDescription`,`packageDuration`,`packageName`,`packagePrice`) values (18,'',5,'good package','2','Sample Package',200000),(19,'',10,'top one','3','Sample Package 2',350000),(20,'',25,'huge one','5','Sample Package 3',750000);
 
 /*Table structure for table `product_table` */
 
@@ -218,6 +231,8 @@ CREATE TABLE `product_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `product_table` */
+
+insert  into `product_table`(`productId`,`deleteStatus`,`productDescription`,`productName`,`categoryVO_categoryId`,`subcategoryVO_subcategoryId`) values (45,'\0','delicious','Mango Dolly',21,24),(46,'','its the frozen candy made of mango, sugar and milk.','Mango Dolly',21,24),(47,'','its frozen chocolate candy with chocolate chips on outer layer.','crunchy zulubar',21,24),(49,'','its soft ice cream cup with dark choco flavour. ','choco brownie',21,48),(50,'','A mixture of crunchy veggies is shaped into balls and deep-fried, and then tossed with an assortment of sauces and flavour.','dry veg manchurian',22,27),(51,'','it contains soy sauce, sesame paste, pickled vegetables, chopped garlic chives and chili oil.','hot dry noodles',22,28),(52,'','its a soft carbonated drink.','coca cola',29,30),(53,'','its a liquid extract of the orange tree fruit, produced by squeezing oranges.','orange juice',29,31);
 
 /*Table structure for table `register` */
 
@@ -241,7 +256,7 @@ CREATE TABLE `register` (
 
 /*Data for the table `register` */
 
-insert  into `register`(`registerId`,`companyAddress`,`companyContact`,`companyName`,`emailId`,`gender`,`ownerContact`,`ownerName`,`owneremailId`,`loginVO_loginId`) values (2,'xyz','123','abc','sharyuchavansc@gmail.com','female','vfvf','qwer','sdf',1);
+insert  into `register`(`registerId`,`companyAddress`,`companyContact`,`companyName`,`emailId`,`gender`,`ownerContact`,`ownerName`,`owneremailId`,`loginVO_loginId`) values (2,'xyz','123','abc','patelsheshan0@gmail.com','male','vfvf','Sheshan Patel','sdf',1),(17,'sjsjdk','54511616','amslal','sheshanpatel@yahoo.com','male','45944845`','sonu','jadjjjsak@gmail.com',16),(58,'bajibdsa','9974845177','xyz','yshp1997@gmail.com','male','41555','Yash Patel','vvfsfsrf@gmail.com',57);
 
 /*Table structure for table `subcategory_table` */
 
@@ -259,6 +274,8 @@ CREATE TABLE `subcategory_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `subcategory_table` */
+
+insert  into `subcategory_table`(`subcategoryId`,`deleteStatus`,`subcategoryDescription`,`subcategoryName`,`categoryVO_categoryId`) values (24,'','its a thick delicious frozen ice cream','Candy',21),(25,'','its a soft delicious frozen ice cream','Vanilla cup',21),(27,'','It is an exotic dish made of mixed vegetable steamed formed into dumplings deep fried and cooked in a tangy sauce.','Manchurian',22),(28,'','A noodle is a piece of pasta, especially a long, skinny one.','noodles',22),(30,'','its a sweetened, carbonated soft drink flavored with vanilla, cinnamon, citrus oils and other flavorings.','colas',29),(31,'',' its a drink made from the extraction or pressing of the natural liquid contained in fruit and vegetables. ','juices',29),(48,'\0','qkwjkqjkqwj','Vanilla cup',21);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
