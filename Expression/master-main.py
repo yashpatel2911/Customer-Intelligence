@@ -98,5 +98,6 @@ def add_header(r):
     return r
 
 
-
-app.run(port=5678)
+if __name__=="__main__":
+    app.debug = False
+    app.run(port=5678)
