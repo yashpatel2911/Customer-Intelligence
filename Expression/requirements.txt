@@ -1,0 +1,7 @@
+numpy
+matplotlib
+flask
+pymysql
+opencv-python
+tensorflow==1.15
+keras==2.0.3

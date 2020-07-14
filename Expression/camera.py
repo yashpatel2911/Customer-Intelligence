@@ -165,7 +165,7 @@ def start_app(path):
     plt.xlabel('Emotions')
     plt.ylabel('Frame Percentage')
     plt.title('Video Analysis Graph')
-    plt.savefig('static/images/graph.jpg')
+    plt.savefig('static/images/graph.png')
     plt.gcf().clear()
 
     return dict
